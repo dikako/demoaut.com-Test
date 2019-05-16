@@ -1,55 +1,86 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="3" passed="3">
+<testng-results skipped="0" failed="1" total="3" passed="2">
   <reporter-output>
     <line>
       <![CDATA[64]]>
     </line>
   </reporter-output>
-  <suite name="Default suite" duration-ms="44052" started-at="2019-05-15T10:04:12Z" finished-at="2019-05-15T10:04:56Z">
+  <suite name="Suite" duration-ms="78271" started-at="2019-05-16T06:50:35Z" finished-at="2019-05-16T06:51:53Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="44052" started-at="2019-05-15T10:04:12Z" finished-at="2019-05-15T10:04:56Z">
+    <test name="Test" duration-ms="78271" started-at="2019-05-16T06:50:35Z" finished-at="2019-05-16T06:51:53Z">
       <class name="testcase.MainClass">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:testcase.MainClass@2a5ca609]" name="setUp" is-config="true" duration-ms="10312" started-at="2019-05-15T15:34:12Z" finished-at="2019-05-15T15:34:22Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:testcase.MainClass@2a5ca609]" name="setUp" is-config="true" duration-ms="23324" started-at="2019-05-16T12:20:35Z" finished-at="2019-05-16T12:20:58Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="titlePageTestDemoAUT()[pri:0, instance:testcase.MainClass@2a5ca609]" name="titlePageTestDemoAUT" duration-ms="1479" started-at="2019-05-15T15:34:22Z" finished-at="2019-05-15T15:34:24Z">
+        <test-method status="PASS" signature="titlePageTestDemoAUT()[pri:0, instance:testcase.MainClass@2a5ca609]" name="titlePageTestDemoAUT" duration-ms="4588" started-at="2019-05-16T12:20:58Z" finished-at="2019-05-16T12:21:03Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- titlePageTestDemoAUT -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:testcase.MainClass@2a5ca609]" name="tearDown" is-config="true" duration-ms="887" started-at="2019-05-15T15:34:24Z" finished-at="2019-05-15T15:34:25Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:testcase.MainClass@2a5ca609]" name="tearDown" is-config="true" duration-ms="6092" started-at="2019-05-16T12:21:03Z" finished-at="2019-05-16T12:21:09Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:testcase.MainClass@2a5ca609]" name="setUp" is-config="true" duration-ms="9142" started-at="2019-05-15T15:34:25Z" finished-at="2019-05-15T15:34:34Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:testcase.MainClass@2a5ca609]" name="setUp" is-config="true" duration-ms="11917" started-at="2019-05-16T12:21:09Z" finished-at="2019-05-16T12:21:21Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="testRegisterationInDemoAUT()[pri:1, instance:testcase.MainClass@2a5ca609]" name="testRegisterationInDemoAUT" duration-ms="10292" started-at="2019-05-15T15:34:34Z" finished-at="2019-05-15T15:34:44Z">
+        <test-method status="FAIL" signature="testRegisterationInDemoAUT()[pri:1, instance:testcase.MainClass@2a5ca609]" name="testRegisterationInDemoAUT" duration-ms="5976" started-at="2019-05-16T12:21:21Z" finished-at="2019-05-16T12:21:27Z">
+          <exception class="java.lang.AssertionError">
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError
+	at testcase.MainClass.testRegisterationInDemoAUT(MainClass.java:24)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1215)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.run(TestNG.java:1048)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
             <line>
               <![CDATA[64]]>
             </line>
           </reporter-output>
         </test-method> <!-- testRegisterationInDemoAUT -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:testcase.MainClass@2a5ca609]" name="tearDown" is-config="true" duration-ms="309" started-at="2019-05-15T15:34:44Z" finished-at="2019-05-15T15:34:44Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:testcase.MainClass@2a5ca609]" name="tearDown" is-config="true" duration-ms="2506" started-at="2019-05-16T12:21:27Z" finished-at="2019-05-16T12:21:30Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:testcase.MainClass@2a5ca609]" name="setUp" is-config="true" duration-ms="7752" started-at="2019-05-15T15:34:44Z" finished-at="2019-05-15T15:34:52Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:testcase.MainClass@2a5ca609]" name="setUp" is-config="true" duration-ms="19946" started-at="2019-05-16T12:21:30Z" finished-at="2019-05-16T12:21:50Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="testLoginInDemoAUT()[pri:2, instance:testcase.MainClass@2a5ca609]" name="testLoginInDemoAUT" duration-ms="3323" started-at="2019-05-15T15:34:52Z" finished-at="2019-05-15T15:34:55Z">
+        <test-method status="PASS" signature="testLoginInDemoAUT()[pri:2, instance:testcase.MainClass@2a5ca609]" name="testLoginInDemoAUT" duration-ms="3020" started-at="2019-05-16T12:21:50Z" finished-at="2019-05-16T12:21:53Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testLoginInDemoAUT -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:testcase.MainClass@2a5ca609]" name="tearDown" is-config="true" duration-ms="528" started-at="2019-05-15T15:34:55Z" finished-at="2019-05-15T15:34:56Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:testcase.MainClass@2a5ca609]" name="tearDown" is-config="true" duration-ms="435" started-at="2019-05-16T12:21:53Z" finished-at="2019-05-16T12:21:53Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- testcase.MainClass -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>
